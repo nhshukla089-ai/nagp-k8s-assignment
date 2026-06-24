@@ -4,15 +4,14 @@ Small two-tier app for the K8s workshop submission — FastAPI on the front, Pos
 
 ## Links
 
-Fill these in once everything is deployed:
+Fill these in once everything is deployed: 
 
 | | URL |
 |---|---|
 | Repo | `https://github.com/nhshukla089-ai/nagp-k8s-assignment` |
 | Docker Hub | `https://hub.docker.com/r/anshikashukla/nagp-api` |
-| Live API | `http://27.0.0.1:60341/api/records` |
-| Swagger Documentation | `http://127.0.0.1:60341/docs` |
-| Direct LB API | `http://127.0.0.1:60726/api/records` |
+| Live API | `Local Minikube URL (run: minikube service nagp-api-lb -n nagp-assignment --url)` |
+| Direct LB API | `http://127.0.0.1:61299/api/records` |
 | Swagger Documentation LB API | `http://127.0.0.1:60726/docs` |
 | Video walkthrough | `<paste link here>` |
 | Write-up | [docs/DOCUMENTATION.md](docs/DOCUMENTATION.md) |

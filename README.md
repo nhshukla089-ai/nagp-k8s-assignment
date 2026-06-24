@@ -9,7 +9,7 @@ Fill these in once everything is deployed:
 | | URL |
 |---|---|
 | Repo | `https://github.com/nhshukla089-ai/nagp-k8s-assignment` |
-| Docker Hub | `https://hub.docker.com/r/YOUR_DOCKERHUB_USERNAME/nagp-api` |
+| Docker Hub | `https://hub.docker.com/r/anshikashukla/nagp-api` |
 | Live API | `http://<INGRESS_IP>/api/records` |
 | Direct LB API | `http://<EXTERNAL-IP>/api/records` |
 | Video walkthrough | `<paste link here>` |

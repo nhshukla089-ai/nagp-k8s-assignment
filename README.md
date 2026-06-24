@@ -10,8 +10,10 @@ Fill these in once everything is deployed:
 |---|---|
 | Repo | `https://github.com/nhshukla089-ai/nagp-k8s-assignment` |
 | Docker Hub | `https://hub.docker.com/r/anshikashukla/nagp-api` |
-| Live API | `http://<INGRESS_IP>/api/records` |
-| Direct LB API | `http://<EXTERNAL-IP>/api/records` |
+| Live API | `http://27.0.0.1:60341/api/records` |
+| Swagger Documentation | `http://127.0.0.1:60341/docs` |
+| Direct LB API | `http://127.0.0.1:60726/api/records` |
+| Swagger Documentation LB API | `http://127.0.0.1:60726/docs` |
 | Video walkthrough | `<paste link here>` |
 | Write-up | [docs/DOCUMENTATION.md](docs/DOCUMENTATION.md) |
 

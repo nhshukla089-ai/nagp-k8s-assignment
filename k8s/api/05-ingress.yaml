@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nagp-api-ingress
+  namespace: nagp-assignment
+  labels:
+    app: nagp-api
+spec:
+  ingressClassName: nginx
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: nagp-api-service
+                port:
+                  number: 80

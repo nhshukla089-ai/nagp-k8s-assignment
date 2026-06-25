@@ -11,9 +11,8 @@ Fill these in once everything is deployed:
 | Repo | `https://github.com/nhshukla089-ai/nagp-k8s-assignment` |
 | Docker Hub | `https://hub.docker.com/r/anshikashukla/nagp-api` |
 | Live API | `Local Minikube URL (run: minikube service nagp-api-lb -n nagp-assignment --url)` |
-| Direct LB API | `http://127.0.0.1:61299/api/records` |
-| Swagger Documentation LB API | `http://127.0.0.1:60726/docs` |
-| Video walkthrough | `<paste link here>` |
+| Direct LB API | `http://127.0.0.1:51620/api/records` |
+| Video walkthrough | `https://nagarro-my.sharepoint.com/:v:/p/anshika_shukla/IQDQqtIFHhdbRYIm9u4CWHNCAff6_rdO1o51ARt1ZyLNarM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PkjdS0` |
 | Write-up | [docs/DOCUMENTATION.md](docs/DOCUMENTATION.md) |
 
 ## How it's wired
@@ -65,7 +64,7 @@ Edit `k8s/api/03-deployment.yaml` and swap in your image name.
 **2. Start Minikube**
 
 ```bash
-minikube start --driver=docker --cpus=4 --memory=6g
+minikube start --driver=docker --cpus=2 --memory=4000
 minikube addons enable ingress
 minikube addons enable metrics-server
 ```
@@ -86,6 +85,7 @@ Ingress will work after the addon is ready. If you want an external IP demo, sta
 kubectl get ingress nagp-api-ingress -n nagp-assignment -w
 minikube tunnel
 kubectl get svc nagp-api-lb -n nagp-assignment -w
+minikube service nagp-api-lb -n nagp-assignment --url
 ```
 
 Then hit it:
